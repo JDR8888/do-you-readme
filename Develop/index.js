@@ -2,8 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 //making an empty markdown string that will be populated with the user's responses and a TOC
-
-// TODO: Create an array of questions for user input
+// create array of license info
 const licenseSet = [
     {
         name: "MIT",
@@ -30,8 +29,7 @@ const licenseSet = [
         value: {name: "Eclipse 1.0", value:"https://img.shields.io/badge/License-EPL_1.0-red.svg"},
         short: "Eclipse 1.0"
     },
-];
-
+]; // Create array of questions for prompt/input
 const questions = [
     {
         type:'input',
@@ -79,10 +77,9 @@ const questions = [
         message:'what is your email address? asking for a friend',
         name:'email'
     },
-];
-
+]; //prompt user with the questions
 inquirer.prompt([...questions])
-.then((answers)=> {
+.then((answers)=> { //make string literal of md file with user input placed in correct areas
 let markdown = `
 # ${answers.title}
 
