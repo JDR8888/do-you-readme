@@ -31,6 +31,9 @@ demo of the project:
 ![screenshot of project](./Develop/assets/walkthrough.gif)
 
 
+higher quality walkthrough video is available @ https://drive.google.com/file/d/1mNteH74SOkvYOzfqokupwhNaY9c6dDW8/view 
+
+
 # Installation
 N/A
 # Usage
